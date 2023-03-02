@@ -1,15 +1,24 @@
 /**
  * Created by iyasuwatts on 10/17/17.
  */
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        Integer userNumber = userInput.nextInt();
+        int total = 0;
+
+        for (int i = 0; i <= userNumber; i++) {
+            total = total + i;
+        }
+
+        // int number = getInputNumber();
         
-        int number = getInputNumber();
+        // int sum = sumOfNumbers(number);
         
-        int sum = sumOfNumbers(number);
-        
-        System.out.println(sum);
+        System.out.println("The sum of your number is " + total);
 
     }
     
